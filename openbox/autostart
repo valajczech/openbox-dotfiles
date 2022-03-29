@@ -1,5 +1,6 @@
 setxkbmap cz & 
 picom & 
+feh --bg-fill --randomize ~/.dotfiles/wallpapers
 polybar &
 plank & 
 

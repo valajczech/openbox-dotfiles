@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>adwaita-ob</name>
+    <name>Dark</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -154,7 +154,7 @@
      cases. -->
   <margins>
     <top>50</top>
-    <bottom>15</bottom>
+    <bottom>50</bottom>
     <left>15</left>
     <right>15</right>
   </margins>
@@ -177,72 +177,82 @@
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
   <keyboard>
+
+  <!-- 
+    NOTES:
+      S	-> Shift key 
+      C	-> Control key
+      A	-> Alt key
+      W	-> Super key (Usually bound to the Windows key on keyboards which have one)
+      M -> Meta key
+  -->
+
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
+    <keybind key="W-Left">
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Right">
+    <keybind key="W-Right">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
+    <keybind key="W-Up">
       <action name="GoToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
+    <keybind key="W-Down">
       <action name="GoToDesktop">
         <to>down</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="W-S-Left">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="W-S-Right">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
+    <keybind key="W-S-Up">
       <action name="SendToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Down">
+    <keybind key="W-S-Down">
       <action name="SendToDesktop">
         <to>down</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="W-+">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-ě">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="W-š">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="W-č">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
@@ -251,7 +261,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="W-q">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -323,6 +333,15 @@
           <name>Konqueror</name>
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
+      </action>
+    </keybind>
+    <keybind key="W-Enter">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>kitty</command>
       </action>
     </keybind>
   </keyboard>
@@ -686,6 +705,12 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+    <application type="normal">
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

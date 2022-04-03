@@ -14,6 +14,9 @@
             <item label="Python"> <action name="Execute">
                 <execute>konsole -e python</execute>
             </action> </item>
+            <item label="Visual Studio Code"> <action name="Execute">
+                <execute>code --no-sandbox</execute>
+            </action> </item>
         </menu>
         <menu id="2" label="Editors">
             <item label="Vim"> <action name="Execute">
@@ -32,6 +35,14 @@
                 </action> </item>
             </menu>
         </menu>
+        <menu id="7" label="Multimedia">
+            <item label="PulseAudio Volume Control"> <action name="Execute">
+                <execute>pavucontrol</execute>
+            </action> </item>
+            <item label="Spotify"> <action name="Execute">
+                <execute>spotify</execute>
+            </action> </item>
+        </menu>
         <menu id="5" label="Network">
             <item label="Avahi SSH Server Browser"> <action name="Execute">
                 <execute>bssh</execute>
@@ -41,6 +52,9 @@
             </action> </item>
             <item label="Brave"> <action name="Execute">
                 <execute>brave</execute>
+            </action> </item>
+            <item label="Discord"> <action name="Execute">
+                <execute>discord</execute>
             </action> </item>
         </menu>
         <menu id="19" label="Shells">
@@ -105,6 +119,9 @@
             </action> </item>
             <item label="Info"> <action name="Execute">
                 <execute>konsole -e info</execute>
+            </action> </item>
+            <item label="Nemo"> <action name="Execute">
+                <execute>nemo</execute>
             </action> </item>
             <item label="Plank"> <action name="Execute">
                 <execute>plank</execute>

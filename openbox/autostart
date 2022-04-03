@@ -1,6 +1,6 @@
 setxkbmap cz & 
 picom & 
 feh --bg-fill --randomize ~/.dotfiles/wallpapers
-polybar &
+~/.config/polybar/launch.sh --docky
 plank & 
 
